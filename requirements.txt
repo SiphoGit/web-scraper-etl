@@ -1,0 +1,9 @@
+requests
+bs4
+pandas
+python-dotenv
+mysql-connector-python
+sqlalchemy
+pymysql
+pyyaml
+great_expectations 

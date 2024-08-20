@@ -1,0 +1,97 @@
+expectation_suite_name: premier_transformation_league_table_suite
+expectations:
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: position
+      min_value: 0
+      max_value: 20
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: position
+
+  - expectation_type: expect_column_values_to_be_unique
+    kwargs:
+      column: position
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: team_name
+
+  - expectation_type: expect_column_values_to_be_unique
+    kwargs:
+      column: team_name
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: games_played
+      min_value: 0
+      max_value: 38
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: games_played
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: won
+      min_value: 0
+      max_value: 38
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: won
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: drawn
+      min_value: 0
+      max_value: 38
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: drawn
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: lost
+      min_value: 0
+      max_value: 38
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: lost
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: goals_scored
+      min_value: 0
+      max_value: 999
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: goals_scored
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: goals_conceded
+      min_value: 0
+      max_value: 999
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: goals_conceded
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: goal_difference
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: points
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: points
+      min_value: 0
+      max_value: 999

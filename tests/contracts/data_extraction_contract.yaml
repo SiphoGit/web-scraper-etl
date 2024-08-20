@@ -1,0 +1,97 @@
+expectation_suite_name: premier_extraction_league_table_suite
+expectations:
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: 'No'
+      min_value: 0
+      max_value: 20
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: 'No'
+
+  - expectation_type: expect_column_values_to_be_unique
+    kwargs:
+      column: 'No'
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: Teams
+
+  - expectation_type: expect_column_values_to_be_unique
+    kwargs:
+      column: Teams
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: GP
+      min_value: 0
+      max_value: 38
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: GP
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: W
+      min_value: 0
+      max_value: 38
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: W
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: D
+      min_value: 0
+      max_value: 38
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: D
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: L
+      min_value: 0
+      max_value: 38
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: L
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: GF
+      min_value: 0
+      max_value: 999
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: GF
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: GA
+      min_value: 0
+      max_value: 999
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: GA
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: GD
+
+  - expectation_type: expect_column_values_to_not_be_null
+    kwargs:
+      column: PTS
+
+  - expectation_type: expect_column_values_to_be_between
+    kwargs:
+      column: PTS
+      min_value: 0
+      max_value: 999
