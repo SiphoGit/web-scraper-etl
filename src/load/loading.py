@@ -6,7 +6,7 @@ import os
 # Configure the root directory path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__))))
 
-def load_data(db:object, cursor:object, data:pd.DataFrame):
+def load_data(db:object, cursor:object, data:pd.DataFrame) -> None:
     try:
         # Create the table
         table_name = 'transformed_premier_league_table'
